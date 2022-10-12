@@ -82,7 +82,7 @@ public class Order {
 			sb.append(it + "\n");
 		}
 		
-		sb.append("Total price: $" + total());
+		sb.append("Total price: $" + String.format("%.2f", total()));
 		
 		return sb.toString();
 	}
